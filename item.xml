@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200pt"
+        android:layout_margin="10pt"
+        app:cardCornerRadius="10pt">
+
+        <ImageView
+            android:id="@+id/gambarfilm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradasi"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingRight="10pt"
+            android:paddingLeft="10pt">
+            <TextView
+                android:id="@+id/judulfilm"
+                android:layout_below="@id/tanggalrilisfilm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                android:fontFamily="sans-serif-black"/>
+            <TextView
+                android:id="@+id/deskripsifilm"
+                android:layout_below="@id/judulfilm"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ini adalah deskripsi tentang film"
+                android:textSize="10pt"
+                android:lines="3"
+                android:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/tanggalrilisfilm"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="8pt"
+                android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
